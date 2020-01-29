@@ -1,0 +1,518 @@
+@import url('https://fonts.googleapis.com/css?family=Fira+Sans&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-family: 'Fira Sans', sans-serif;
+}
+.main__page{
+    width: 100%;
+}
+
+/*******左側導航列 ********/
+.nav{
+    width: 15%;
+    height: 100vh;
+    background-color: #fdcdd5;
+   
+    position: fixed;
+}
+.nav .logo{
+    padding: 10px;
+    margin: 10px;
+    text-align: center;
+}
+.logo a{
+    color: #FFF;
+    text-decoration: none;
+    font-size: 26px;
+    letter-spacing: 5px;
+}
+.menu__itme{
+    margin-top: 50px;
+    padding: 10px;
+    text-align: center;
+}
+.menu__itme li{
+    margin: 30px 0;
+    padding: 8px;
+    
+    
+}
+.menu__itme li a{
+    color: #FFF;
+    text-decoration: none;
+    font-size: 18px;
+    letter-spacing: 3px;
+    transition: 0.5s;
+}
+li span{
+    color: coral;
+    font-weight: bold;
+}
+li a:hover{
+    color: coral;
+}
+.gray {
+    color: gray;
+    font-size: 10px;
+    margin-top: 20px;
+}
+
+/*******左側導航列 ********/
+
+
+
+/**************Right側導航列 *******************/
+
+/* banner */
+.shopping__page{
+    width: 85%;
+    height: 100vh;
+    position: absolute;
+    right: 0;
+}
+.banner__img img{
+    width: 100%;
+}
+.imgMove{
+    transition: ease 0.3s;
+}
+/* banner End*/
+
+/* CoundownTime Start */
+
+.timewrap{
+    width: 100%;
+    margin: 30px 0;
+    text-align: center;
+}
+.timewrap h1{
+    background-color: red;
+    color: #FFF;
+    padding: 10px 0;
+    margin-bottom: 20px;
+}
+.times{
+    font-style: italic;
+    font-size: 20px;
+}
+.times i{
+    color: red;
+}
+
+/* CoundownTime End */
+
+
+/* sale items */
+.sale__item{
+    width: 100%;
+    display: flex;
+    margin: 100px 0;
+    position: relative;   
+}
+
+
+.sale__item-box,
+.item__img {
+    width: 50%;
+    margin: auto;
+    /* border: 1px solid #CCC; */
+    overflow: hidden;
+    transform: scale(1);
+}
+
+.item__img img{
+    width: 100%;
+    transition: 1s;
+}
+.item__img:hover img{
+    transform: scale(1.1);
+}
+.sale__text h4{
+    text-align: center;
+    margin-top: 10px;
+}
+.sale__tag{
+    color: #FFF;
+    background-color: red;
+    padding: 5px;
+    position: absolute;
+    top: 0px;
+    margin-left: 10px;
+    
+    
+}
+
+
+/* sale items End */
+
+/* 2. */
+/* New ARRIVALS Start */
+.new__title{
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+    margin: 50px 0;
+}
+.new__title span{
+    font-size: 18px;
+    color: rgb(141, 141, 141);
+}
+
+
+.new__banner{
+    width: 100%;
+    display: flex;
+}
+.new__img{
+    width: 90%;
+}
+.new__img img{
+    width: 100%;
+}
+.new__text{
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+ align-items: center;
+}
+.new__h1{
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+.new__text p{
+    font-size: 14px;
+    line-height: 18px;
+    padding: 10px;
+}
+
+.new__total{
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 40px;
+}
+.new__item{
+    width: 20%;
+    margin: 10px 5px;
+}
+.new__item img{
+    width: 100%;
+}
+.new__item-text{
+    text-align: center;
+}
+.new__item-text p{
+    font-size: 12px;
+    margin: 10px 0;
+}
+
+
+/* New ARRIVALS End */
+
+/* Bags Start */
+
+.allBag{
+   width: 100%;
+   margin-bottom: 100px;
+   position: relative;
+
+}
+.bag__item{
+    float: left;
+    position: relative;
+    transition: 0.6s;
+}
+.bag__item:hover img{
+   opacity: 0.8;
+}
+
+.bag__item:first-child{
+    width: 50%;
+}
+.bag__item:nth-child(2){
+    width: 25%;
+  
+}
+.bag__item:nth-child(3){
+    width: 25%;
+}
+.bag__item:nth-child(4){
+    width: 50%;
+}
+.bag__item img{
+    width: 100%;
+    vertical-align: middle;
+} 
+.bag__text p{
+   color: #FFF;
+   font-size: 28px;
+   text-align: center;
+   position: absolute;
+   top: 150px;
+   padding: 20px;
+}
+
+.bag__button{
+    width: 100%;
+    height: 43px;
+    text-align: center;
+    
+    
+}
+.bag__button a{
+   
+    font-size: 28px;
+    line-height: 43px;
+    padding: 5px;
+    text-decoration: none;
+    color: #000;
+    border-bottom: 3px double #000;
+    transition: 0.5s;
+}
+.bag__button a:hover  {
+    background-color: #fdcdd5;
+    color: #FFF;
+}
+
+/* Bags End */
+
+/* Shoes Start */
+.shoes__title{
+    width: 100%;
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+    margin-top: 150px 0;
+    display: block;
+  
+
+}
+.allShoes{
+    width: 100%;
+    margin-top: 50px;
+    
+}
+.allshoes__wrap{
+    display: flex;
+    margin: auto;
+}
+
+.shoes__item{
+    width: 30%;
+    margin-left: 20px;
+    transition: 0.3s;
+}
+.shoes__item img{
+    width: 100%;
+}
+.shoes__item:hover{
+    opacity: 0.8;
+}
+.shoes__text{
+    text-align: center;
+    margin: 40px 0;
+    font-size: 18px;
+}
+
+
+/* Wear start */
+
+.wear__wrap{
+    display: flex;
+    margin: auto;
+}
+.wear__item{
+    width: 50%;
+    margin: 0 10px;
+    transition: 0.3s;
+}
+.wear__item img{
+    width: 100%;
+}
+.wear__item:hover{
+    opacity: 0.9;
+}
+.wear__text{
+    text-align: center;
+    font-size: 18px;
+    padding: 10px;
+}
+
+/* Wear End */
+
+/* Stores Start */
+.allStores{
+    width: 100%;
+}
+.stores__wrap{
+    display: flex;
+    margin: auto;
+}
+.stores__item{
+    width: 25%;
+    text-align: center;
+    margin: 0 10px;
+    transition: 0.5s;
+}
+.stores__item:hover{
+    opacity: 0.8;
+}
+.stores__img img{
+    width: 100%;
+}
+.stores__item h4{
+    margin: 40px 0;
+}
+.stores__text {
+    margin: 20px 0;
+}
+.stores__text p{
+    font-size: 12px;
+    line-height: 20px;
+}
+
+/* Stores End */
+
+/* Contact Start */
+.contact__wrap{
+    width: 1000px;
+    margin: auto;
+    margin-top: 100px;
+    padding-top: 60px;
+}
+.contact__main{
+    width: 500px;
+    height: 510px;
+    margin: auto;
+    margin-bottom: 100px;
+    background-color: beige;
+    border: 10px solid rgb(243, 243, 184);
+    border-radius: 20px;
+    text-align: center;
+    box-shadow: 10px 10px 30px rgb(204, 204, 159);
+}
+.contact__main .icon{
+    width: 100px;
+    height: 100px;
+    line-height: 100px;
+    font-size: 60px;
+    background-color: beige;
+    color: coral;
+    margin: 0 auto 0;
+    margin-top: -60px;
+    border-radius: 50%;
+    position: relative;
+}
+.contact__main .icon::before{
+    content: '';
+    width: 100%;
+    height: 100%;
+    border-top: 10px solid rgb(243, 243, 184);
+    border-right: 10px solid rgb(243, 243, 184);
+    border-bottom: 10px solid transparent;
+    border-left: 10px solid transparent;
+    transform: rotate(-45deg);
+    position: absolute;
+    top: -10px;
+    left: -10px;
+    border-radius: 50%;
+
+} 
+.contact__main:hover .fa{
+    animation: shake 0.3s infinite linear alternate;
+}
+
+@keyframes shake{
+    0%{ transform: rotate(-10deg);}
+    100%{transform: rotate(10deg);}
+}
+
+
+.input__main input{
+    height: 40px;
+    border: none;
+    border-bottom: 1px solid #CCC;
+    background-color: beige;
+    outline: none;
+}
+input[type=text],
+[type=email]{
+    width: 200px;
+    transition: width 0.2s ease-in-out;
+}
+input:focus{
+    width: 300px;
+}
+
+.input__main textarea{
+    width: 350px;
+    height: 200px;
+    border: none;
+    border-bottom: 1px solid #CCC;
+    outline: none;
+}
+
+.input__main p{
+    margin: 10px 0;
+    position: relative;
+}
+
+.contact__main .btn{
+    width: 100px;
+    /* margin: 10px; */
+    margin: 10px auto 0;
+    padding: 10px;
+    background-color: rgb(250, 197, 177);
+    font-weight: bold;
+    transition: 0.5s;
+    border-radius: 30px;
+    cursor: pointer;
+    
+}
+.contact__main .btn:hover{
+    background-color: rgb(250, 250, 146);
+    color: rgb(192, 192, 192);
+}
+
+/* Contact End */
+
+/* footer Start */
+.footer__wrap{
+    width: 100%;
+    height: 30px;
+} 
+.footer__main{
+    margin: 30px;
+}
+.footer__main ul{
+    display: flex;
+    justify-content: center;
+
+}
+.footer__main ul li{
+    margin-left: 30px;
+    font-size: 10px;
+}
+.footer__main ul li a{
+    color: #000;
+    letter-spacing: 3px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+.footer__main a:hover{
+    color: coral;
+}
+
+
+/* footer End */
+
+
+
+
+
+
+
+/**************Right側導航列 *******************/
