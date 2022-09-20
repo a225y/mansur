@@ -30,7 +30,7 @@ window.onload = function(){
 setInterval(function () {
         var oTime = document.getElementsByTagName("i");
         var nowTime = new Date();
-        var endTime = new Date("2020/06/01,12:00:00");
+        var endTime = new Date("2022/10/01,12:00:00");
         var countdown = parseInt((endTime.getTime() - nowTime.getTime()) / 1000);
 
         var d = parseInt(countdown / 3600 / 24);
